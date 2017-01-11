@@ -1,0 +1,30 @@
+<script>
+
+//If we list all the natural numbers below 10 that are multiples of 
+//3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+//Find the sum of all the multiples of 3 or 5 below 1000.
+
+//Since there only 333 multiples of 3 and 200 multiples of 5
+//creating two loops and incrementing by 3 or 5 will take less time
+//than iterating up to 1000 by 1.
+
+var multiples = 0;
+	
+for (i = 3; i < 1000; i+=3){
+	if (i % 3 === 0) {
+  	multiples += i;
+  }
+}
+
+for (i = 5; i < 1000; i+=5){
+	//Make sure to not count the same multiple twice
+	if (i % 5 === 0 && i % 3 !== 0) {
+  	multiples += i;
+  }
+}
+
+console.log(multiples);
+
+
+console.log(sum)
+</script>
